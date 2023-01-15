@@ -1,0 +1,1 @@
+<img src="{{asset('logo/admin-ico.png')}}" width="20px">
