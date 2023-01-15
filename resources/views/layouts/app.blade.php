@@ -15,11 +15,11 @@
     </head>
     <body class="font-sans antialiased">
 
-        <div class="flex" id="wrapper" x-data="{isOpen:true}">
+        <div class="flex" id="wrapper" x-data="{isOpen:false}">
 
-            <div id="sidebar" class="w-48 h-screen overflow-y-auto bg-green-800 transition-all duration-200"
+            <div id="sidebar" class="w-48 h-screen overflow-y-auto bg-green-800 transition-all duration-400"
                     :class="isOpen?'w-48':'w-0'">
-                    <div class="w-full h-auto p-4 flex justify-center bg-gray-100">
+                    <div class="w-full h-auto p-4 flex justify-center bg-green-400">
                         <div class="shrink-0 flex items-center">
                             <a href="{{ route('dashboard') }}">
                                 <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
@@ -30,7 +30,12 @@
             </div>
             <div id="body" class="w-full h-screen overflow-y-auto bg-gray-400 transition-all duration-200">
                     <div class="w-full h-auto p-4 flex justify-between bg-green-800">
-                        <button @click.prevent="isOpen = !isOpen">x</button>
+                        <button @click.prevent="isOpen = !isOpen">
+                            
+                            <svg class="fill-current h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"></path>
+                              </svg>
+                        </button>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
