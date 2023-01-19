@@ -19,13 +19,16 @@ Route::get('/', function () {
     return view('homepage');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::controller(AnnouncementController::class)->group(function () {
     Route::get('/add-announcement', 'create');
-    
+    Route::post('/add-announcement', 'store');
+    Route::get('/list-announcement', 'list');
+
 });
 
 Route::middleware('auth')->group(function () {
@@ -35,3 +38,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
+

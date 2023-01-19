@@ -1,28 +1,47 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Requests\AnnouncementRequest;
+use Illuminate\Validation\Rule;
+use App\Http\Requests\UserRequest;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Http\Request;
-use App\Models\Announcement;
+use App\Models\User;
 
-class AnnouncementController extends Controller
+
+
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function index()
     {
-        return view('announcement.create');
+        
+        return view('admin.index');
     }
     public function list()
     {
-        $announcements = Announcement::all();
-        return view('announcement.list', compact('announcements'));
+        
+        $users = User::all();
+        return view('admin.list', compact('users'));
+    }
+    public function create()
+    {
+        return view('admin.create');
+        
+
     }
 
+    
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    
 
     /**
      * Store a newly created resource in storage.
@@ -30,25 +49,22 @@ class AnnouncementController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(AnnouncementRequest $request){
-
-        $request->validated([
-            'header'=>'required',
-            'sub_header'=>'required',
-            'description'=>'required',
-            'photo'=>'required',
-            'user_id'=>'required',
+    public function store(Request $request)
+    {
+        $request->validate([
+            'name' => ['required', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
+            'password' => ['required'],
         ]);
 
+        User::create([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=>$request->password,
 
-        $announcement = new Announcement;
-        $announcement->header = $request->header;
-        $announcement->sub_header = $request->sub_header;
-        $announcement->description = $request->description;
-        $announcement->photo = $request->photo;
-        $announcement->user_id = $request->user_id;
-        $announcement->save();
-        return redirect('/add-announcement')->with('message', 'Announcement Added Successfully');
+        ]);
+
+        return redirect('/create-user')->with('message', 'User Added Successfully');
 
     }
 
@@ -60,7 +76,7 @@ class AnnouncementController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
