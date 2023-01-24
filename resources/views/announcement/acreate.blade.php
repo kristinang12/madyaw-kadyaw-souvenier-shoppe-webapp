@@ -9,7 +9,7 @@
         <x-success-status class="mb-4" :status="session('message')" />
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-blue overflow-hidden shadow-sm sm:rounded-lg">
-                <form class="{{ url('add-announcement')}}" method="post">
+                <form class="{{ url('create-announcement')}}" method="post"  enctype="multipart/form-data">
                     @csrf
                     
                     <div>

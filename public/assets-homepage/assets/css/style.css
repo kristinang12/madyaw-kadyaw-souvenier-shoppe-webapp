@@ -30,7 +30,7 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
-}zz
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -151,7 +151,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: rgb(57, 174, 114);
 }
 
 #header .logo a span {
@@ -169,7 +169,7 @@ h6 {
   color: #fff;
   border-radius: 4px;
   padding: 7px 25px 8px 25px;
-  gray-space: nowrap;
+  white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
@@ -219,7 +219,7 @@ h6 {
   font-size: 15px;
   font-weight: 600;
   color: #fff;
-  gray-space: nowrap;
+  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -442,18 +442,20 @@ h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 64px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  color: rgb(43, 151, 104);
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 #hero h1 span {
   color: #ffc451;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(213, 213, 70, 0.9);
   margin: 10px 0 0 0;
   font-size: 24px;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 #hero .icon-box {
@@ -598,7 +600,7 @@ section {
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
-  filter: greenscale(100);
+  filter: grayscale(100);
 }
 
 .clients .swiper-slide img:hover {
@@ -1057,7 +1059,7 @@ section {
 
 .testimonials .testimonial-item {
   text-align: center;
-  color: #fff;
+  color: rgb(137, 201, 34);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1071,12 +1073,12 @@ section {
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #fff;
+  color: rgb(16, 182, 177);
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #ddd;
+  color: rgb(19, 155, 94);
   margin: 0 0 15px 0;
 }
 
@@ -1372,7 +1374,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: graysmoke;
+  background: whitesmoke;
   min-height: 40px;
   margin-top: 74px;
 }

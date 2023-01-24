@@ -18,16 +18,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('homepage');
 });
-
+Route::get('/announcementpage', function () {
+    return view('announcementpage');
+});
+Route::get('/announcement', [AnnouncementController::class, 'alist']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::controller(AnnouncementController::class)->group(function () {
-    Route::get('/add-announcement', 'create');
-    Route::post('/add-announcement', 'store');
-    Route::get('/list-announcement', 'list');
+    
+        //Route::get('/announcement', 'alist');
+        Route::get('/create-announcement', 'acreate')->name('create.dashboard');
+        Route::post('/create-announcement', 'store');
+        
+        //Route::resource('/list-announcement', 'list');
 
 });
 

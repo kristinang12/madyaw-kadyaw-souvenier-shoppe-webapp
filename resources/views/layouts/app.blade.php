@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Madyaw-Kadyaw-Souvenier-Shoppe') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -15,7 +15,7 @@
     </head>
     <body class="font-sans antialiased">
 
-        <div class="flex" id="wrapper" x-data="{isOpen:false}">
+        <div class="flex" id="wrapper" x-data="{isOpen:true}">
 
             <div id="sidebar" class="w-72 h-screen overflow-y-auto bg-green-800 transition-all duration-400 "
                     :class="isOpen?'w-48':'w-0'">
