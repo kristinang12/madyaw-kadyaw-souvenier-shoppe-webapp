@@ -1,8 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests\AnnouncementRequest;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Http\Request;
+use App\Models\Announcement;
+use Illuminate\Support\Facades\DB;
 
 class AnnouncementController extends Controller
 {
@@ -11,9 +14,14 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function acreate()
     {
-        return view('announcement.create');
+        return view('announcement.acreate');
+    }
+    public function alist()
+    {
+        $data = Announcement::all();
+        return view('alist', compact('data'));
     }
 
 
@@ -23,9 +31,41 @@ class AnnouncementController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
+    public function store(AnnouncementRequest $request){
+
+        $request->validated([
+            'header'=>'required',
+            'sub_header'=>'required',
+            'description'=>'required',
+            'photo'=>'required',
+            'user_id'=>'required',
+        ]);
+        // $fileName = time().$request->file('photo');
+        //$path = $request->file('photo')->storeAs('images', $fileName, 'public');
+        //$request["photo"] = '/storage/'.$path;
+        //Announcement::create([
+        //    'header'=>$request->header,
+        //    'sub_header'=>$request->sub_header,
+          //  'description'=>$request->description,
+          //  'photo'=>$request->photo,
+          //  'user_id'=>$request->user_id,
+
+        //]);
+      
+
+     
+
+
+       $announcement = new Announcement;
+        $announcement->header = $request->header;
+       $announcement->sub_header = $request->sub_header;
+       $announcement->description = $request->description;
+        $announcement->photo = $request->photo;
+       $announcement->user_id = $request->user_id;
+       $announcement->save();
+
+        return redirect('/create-announcement')->with('message', 'Announcement Added Successfully');
+
     }
 
     /**
@@ -36,7 +76,13 @@ class AnnouncementController extends Controller
      */
     public function show($id)
     {
-        //
+    
+        $users = DB::select('select * from users');
+ 
+        foreach ($users as $user) {
+        echo $user->name;
+}
+        
     }
 
     /**
