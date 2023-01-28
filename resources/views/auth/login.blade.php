@@ -5,7 +5,7 @@
     <style>
         form {
             background-color: rgb(241, 112, 25); 
-            border: 3px solid rgb(110, 28, 4);   
+            border: 3px solid rgb(110, 28, 4); 
         }
     
     </style>
