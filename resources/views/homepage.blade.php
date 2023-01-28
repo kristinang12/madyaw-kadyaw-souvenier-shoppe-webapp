@@ -63,7 +63,7 @@
       
       <style>
         .multicolortext {
-          background: linear-gradient(to right, cyan, rgb(10, 252, 199), rgb(54, 240, 8), rgb(208, 255, 0), yellow, orange, red);
+          background: linear-gradient(to right, orange, rgba(197, 58, 3, 0.993));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background color: transparent;
