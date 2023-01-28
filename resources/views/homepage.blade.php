@@ -98,6 +98,14 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
+    <style>
+      section#about.about {
+        background-color: orange;
+      }
+      section#about.about p{
+        color: black; 
+      }
+      </style>
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -126,6 +134,16 @@
       <br>
       <br>
     <!-- ======= Features Section ======= -->
+    <style>
+      section#features.features {
+        background-color: rgb(240, 141, 28);
+      }
+      
+      h4{
+        color: black;
+      }
+     
+      </style>
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
@@ -135,7 +153,7 @@
             <div class="icon-box mt-5 mt-lg-0 " data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-receipt"></i>
               <h4>Madyaw Kadyaw Cafe</h4>
-              <p>We would like to thank Madyaw Kadyaw Souvenir Shoppe and Madyaw Kadyaw Café as two of our official sponsors in realizing the Magmugna Ta project.
+              <p class='custom-text-class'>We would like to thank Madyaw Kadyaw Souvenir Shoppe and Madyaw Kadyaw Café as two of our official sponsors in realizing the Magmugna Ta project.
                  If you are looking for local products, souvenirs, delicacies and pasalubong, manobo costume and accessories, tokens and leis, you can visit Madyaw Kadyaw at Ochoa, T. Calo, P-3 Brgy. Limaja, Butuan City, Caraga, Philippines. You can check our Facebook page for their sample products.
               And if you are looking for a place where you can relax with your friends, have some coffee, and just enjoy the good food, Madyaw Kadyaw Cafe is a must try space! They are also open for bookings and orders. You can find their area inside the Madyaw Kadyaw Souvenir Shoppe. Don't miss their opening on November 8, 2022!
               From the Ka Bandera and the National Commission for Culture and the Arts (NCCA), daghang salamat sa inyong tanan!
@@ -151,6 +169,14 @@
     </section><!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <style>
+      section#product.portfolio {
+        background-color: rgb(189, 80, 8);
+      }
+      section#about.about p{
+        color: #ffffff; 
+      }
+      </style>
     <section id="product" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -420,6 +446,11 @@
     </section><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
+    <style>
+      section#contact.contact {
+        background-color: rgb(240, 122, 25);
+      }
+      </style>
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
