@@ -63,9 +63,14 @@
       
       <style>
         .multicolortext {
-          background: linear-gradient(to right, orange, rgba(197, 58, 3, 0.993));
+          background: linear-gradient(to right, rgb(255, 190, 69), rgba(253, 84, 16, 0.993));
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
+          background color: transparent;
+        }
+        
+        .text-color {
+          color: black;
           background color: transparent;
         }
       </style>
@@ -84,7 +89,7 @@
         <div class="d-flex flex-row bg-secondary">
             <div class="p-2 bg-info">
                 
-                <a href="/announcement" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Announcement</a>
+                <a href="/announcement" class="text-color" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Announcement</a>
             </div>
         </div>
         
@@ -100,7 +105,7 @@
     <!-- ======= About Section ======= -->
     <style>
       section#about.about {
-        background-color: orange;
+        background-color: rgb(240, 141, 28);
       }
       section#about.about p{
         color: black; 
@@ -136,7 +141,7 @@
     <!-- ======= Features Section ======= -->
     <style>
       section#features.features {
-        background-color: rgb(240, 141, 28);
+        background-color: orange;
       }
       
       h4{

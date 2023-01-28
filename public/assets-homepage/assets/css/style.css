@@ -887,7 +887,7 @@ section {
 .testimonials .testimonial-item .testimonial-img {
   width: 100px;
   border-radius: 50%;
-  border: 6px solid white;
+  border: 6px solid black;
   margin: 0 auto;
 }
 
