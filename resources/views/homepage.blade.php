@@ -70,9 +70,16 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
           <h1>Madyaw Kadyaw Souvenir Shoppe</h1>
-          <h2><span class="typed" data-typed-items="KAYNA KAMII, ATO INI,KAYNA KAMII, ATO INI"></span></h2>
         </div>
       </div>
+      <div class="d-flex flex-row bg-secondary">
+        <div class="p-2 bg-info">
+            
+            <a href="/announcement" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Announcement</a>
+        </div>
+    </div>
+
+
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         
@@ -130,6 +137,8 @@
 
       </div>
     </section><!-- End Clients Section -->
+
+    <br>
 
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
