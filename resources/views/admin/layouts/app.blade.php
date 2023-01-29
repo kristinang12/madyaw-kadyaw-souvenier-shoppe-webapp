@@ -17,9 +17,9 @@
 
         <div class="flex" id="wrapper" x-data="{isOpen:false}">
 
-            <div id="sidebar" class="w-72 h-screen overflow-y-auto bg-green-800 transition-all duration-400 "
+            <div id="sidebar" class="w-72 h-screen overflow-y-auto bg-rgba(230, 98, 10, 0.959)-800 transition-all duration-400 "
                     :class="isOpen?'w-48':'w-0'">
-                    <div class="w-full h-auto p-4 flex justify-center bg-green-400">
+                    <div class="w-full h-auto p-4 flex justify-center bg-rgba(230, 98, 10, 0.959)-400">
                         <div class="shrink-0 flex items-center">
                             <a class="text-white" href="{{ route('dashboard') }}">
                                 <x-application-logo class="block h-9 w-auto fill-current text-gray-500" />
@@ -39,7 +39,7 @@
                     @include('layouts.sidebar')
                     
             </div>
-            <div id="body" class="w-full h-screen overflow-y-auto bg-gray-400 transition-all duration-200">
+            <div id="body" class="w-full h-screen overflow-y-auto bg-orange-400 transition-all duration-200">
                     <div class="w-full h-auto p-4 flex justify-between bg-green-800">
                         <button @click.prevent="isOpen = !isOpen">
                             

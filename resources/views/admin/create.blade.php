@@ -1,6 +1,6 @@
 <x-admin-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-green-800 leading-tight">
+        <h2 class="font-semibold text-xl text-orangered-800 leading-tight">
             {{ __('Add User') }}
         </h2>
     </x-slot>
