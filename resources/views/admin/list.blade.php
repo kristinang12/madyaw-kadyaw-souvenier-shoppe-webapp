@@ -9,6 +9,7 @@
     </x-slot>
 
     <div class="py-12">
+        <x-success-status class="mb-4" :status="session('message')" />
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <table class="table table-bordered">
@@ -17,7 +18,7 @@
                             <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">ID</th>
                             <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">Name</th>
                             <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">email</th>
-                            <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">Edit</th>
+                            <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">update</th>
                             <th scope="col" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">Delete</th>
                         </tr>
                     </thead>
@@ -30,14 +31,20 @@
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$user->email}}</td>
                             
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                                <a href = "{{url('/announcement')}}"class="btn btn-primary">Edit</a>
+                                <a href = "{{url('edit-user/'.$user->id)}}"class="btn btn-primary">update</a>
                                 
                             </td>
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">
-                                <a href = "{{url('/')}}"class="btn btn-primary">Delete</a>
+                                <form action="{{url('delete-user/'.$user->id)}}" method="POST">
+                                    @csrf
+
+                                    @method('DELETE')
+                                    <x-primary-button class="btn btn-danger">Delete</x-primary-button>
+                                </form>
+
                                 
                             </td>
-                          </tr>
+                          </tr> 
                           @empty
                             
                           

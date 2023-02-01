@@ -9,28 +9,19 @@ use Illuminate\Support\Facades\DB;
 
 class AnnouncementController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function acreate()
+    
+    public function index()
     {
-        return view('announcement.acreate');
-    }
-    public function alist()
-    {
+        
         $data = Announcement::all();
-        return view('alist', compact('data'));
+        return view('announcement.index', compact('data'));
     }
 
+    public function create()
+    {
+        return view('announcement.create');
+    }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(AnnouncementRequest $request){
 
         $request->validated([
@@ -40,40 +31,19 @@ class AnnouncementController extends Controller
             'photo'=>'required',
             'user_id'=>'required',
         ]);
-        // $fileName = time().$request->file('photo');
-        //$path = $request->file('photo')->storeAs('images', $fileName, 'public');
-        //$request["photo"] = '/storage/'.$path;
-        //Announcement::create([
-        //    'header'=>$request->header,
-        //    'sub_header'=>$request->sub_header,
-          //  'description'=>$request->description,
-          //  'photo'=>$request->photo,
-          //  'user_id'=>$request->user_id,
-
-        //]);
-      
-
-     
 
 
-       $announcement = new Announcement;
+        $announcement = new Announcement;
         $announcement->header = $request->header;
-       $announcement->sub_header = $request->sub_header;
-       $announcement->description = $request->description;
+        $announcement->sub_header = $request->sub_header;
+        $announcement->description = $request->description;
         $announcement->photo = $request->photo;
-       $announcement->user_id = $request->user_id;
-       $announcement->save();
-
+        $announcement->user_id = $request->user_id;
+        $announcement->save();
         return redirect('/create-announcement')->with('message', 'Announcement Added Successfully');
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
     
@@ -105,7 +75,20 @@ class AnnouncementController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $announcements = Announcement::find($id);
+
+        $announcements->update($request->all());
+
+        session()->flash('status', 'Announcement Updated');
+        return redirect('dashboard/announcement');
+    }
+    public function delete($id)
+    {
+        $announcements = Announcement::find($id);
+        return view('dashboard.announcement.delete', [
+
+            'announcement' => $announcements,
+        ]);
     }
 
     /**
@@ -116,6 +99,9 @@ class AnnouncementController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $announcements = Announcement::findOrFail($id);
+        $announcements->delete();
+
+        return redirect('dashboard/announcement');
     }
 }

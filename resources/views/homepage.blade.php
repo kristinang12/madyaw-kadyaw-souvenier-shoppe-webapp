@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Butuan Souvenir Shop</title>
+  <title>Madyaw Kadyaw Souvenir Shoppe</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,7 +37,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Madyaw Kadyaw<span>.</span></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Madyaw Kadyaw Souvenir Shoppe<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -77,11 +77,17 @@
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
+          <h1>Madyaw Kadyaw Souvenir Shoppe</h1>
           <h1>
             <span class="multicolortext">MADYAW KADYAW SOUVENIR SHOPPE.</span>
           </h1>
         </div>
       </div>
+      <div class="d-flex flex-row bg-secondary">
+
+    </div>
+
+
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
         
@@ -101,6 +107,18 @@
   </section><!-- End Hero -->
 
   <main id="main">
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+          <div class="container" data-aos="zoom-in">
+
+              <div class="swiper-wrapper">
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+        </section><!-- End Testimonials Section -->
 
     <!-- ======= About Section ======= -->
     <style>
@@ -135,9 +153,9 @@
         </div>
 
       </div>
-      <br>
-      <br>
-      <br>
+
+    <br>
+
     <!-- ======= Features Section ======= -->
     <style>
       section#features.features {
@@ -371,84 +389,7 @@
 
 
     <!-- ======= Announcement Section ======= -->
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Department of Tourism</h3>
-                <h4>Region &amp; Caraga 13</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Our DOT CARAGA Regional Director Marienela RA promoting the event of PHILIPPINES TRIBAL WEARS AND TAPESTRIES Habi at Burdang Katutubo on Oct. 22-23, 2021 to be held in Baguio City
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Art Jey Janaral Aquino</h3>
-                <h4>Philippine Army</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Have quality products for soveniers
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Louie Jay De la Cerna Losaria</h3>
-                <h4>Buyer of Manobo Clothing</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  He makes all things beautiful in His time. -Ecc 3:11
-                  Glory to God! Thank you Madyaw Kadyaw Souvenir Shoppe for my Manobo clothing.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Lorijane Decamotan Sacote</h3>
-                <h4>PD, DTI Agusan Del Norte</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  What a mouthful! But, this intricately designed accessory will surely remind you of the warm sunsets in Agusan del Norte with its dangling seashells and cozy fabric.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Delven Ganas Oraiz</h3>
-                <h4>Visitor</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  "The joy of the Lord is my strength. May the Lord  continue to bless u in all aspect of your life. #DoneVisitation @Madyaw Kadyaw Souvenir Shoppe
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
     <style>
@@ -557,23 +498,12 @@
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.facebook.com/ButuanPasalubong" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
           </div>
 
 

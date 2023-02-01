@@ -103,6 +103,10 @@
                                     <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$data->description}}</td>
                                     <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$data->created_at}}</td>
                                   
+                                    {{-- <th scope = "col"> <a href="{{ route('dashboard.announcementupdate', ['id' => $data->id]) }} "
+                                      type="button" class="btn btn-success">Update</a></th>
+                                    <th scope = "col"> <a href="{{ route('dashboard.delete', ['id' => $data->id]) }} "
+                                      type="button" class="btn btn-danger">Delete</a></th> --}}
                                   </tr>
 
 

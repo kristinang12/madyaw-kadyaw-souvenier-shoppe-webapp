@@ -560,6 +560,11 @@ section {
   color: #080000;
 }
 
+ .custom-text-class{
+  display: flex;
+  justify-content: center;
+} 
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;

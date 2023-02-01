@@ -15,7 +15,7 @@
     </head>
     <body class="font-sans antialiased">
 
-        <div class="flex" id="wrapper" x-data="{isOpen:true}">
+        <div class="flex" id="wrapper" x-data="{isOpen:false}">
 
             <div id="sidebar" class="w-72 h-screen overflow-y-auto bg-green-800 transition-all duration-400 "
                     :class="isOpen?'w-48':'w-0'">
@@ -30,11 +30,6 @@
                         
                         
                     </div>
-
-                        <div class="shrink-0 justify-center">
-                            <h1 class= "text-white font-bold items-center"> Madyaw Kadyaw Souvenier Shoppe</h1>
-                           
-                        </div>
 
                     @include('layouts.sidebar')
                     
