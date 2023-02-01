@@ -64,11 +64,13 @@ class AdminController extends Controller
 
         $user = User::find($id);
 
-        $user->update($request->all());
+        $user->update([
+            'name'=>$request->name,
+            'email'=>$request->email,
+            'password'=> Hash::make($request->password),
 
-        session()->flash('status', 'Updated User Successfully!');
-
-        return redirect('edit-user/'.$user->id);
+        ]);
+        return redirect('edit-user/'.$user->id)->with('message', 'User Added Successfully');
 
     }
 

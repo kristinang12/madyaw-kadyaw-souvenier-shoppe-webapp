@@ -21,7 +21,6 @@ Route::get('/', function () {
 Route::get('/announcementpage', function () {
     return view('announcementpage');
 });
-Route::get('/announcement', [AnnouncementController::class, 'alist']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -29,12 +28,9 @@ Route::get('/dashboard', function () {
 
 Route::controller(AnnouncementController::class)->group(function () {
     
-        //Route::get('/announcement', 'alist');
-        Route::get('/create-announcement', 'acreate')->name('create.dashboard');
+        Route::get('/list-announcement', 'index');
+        Route::get('/create-announcement', 'create');
         Route::post('/create-announcement', 'store');
-        Route::post('/announcement/update/{id}', [AnnouncementController::class, 'update'])->name('dashboard.announcementupdate');
-        Route::post('/announcement/delete/{id}', [AnnouncementController::class, 'delete'])->name('dashboard.announcement.delete');
-        Route::post('/announcement/delete/{id}', [AnnouncementController::class, 'destroy'])->name('dashboard.delete');
         //Route::resource('/list-announcement', 'list');
 
 });

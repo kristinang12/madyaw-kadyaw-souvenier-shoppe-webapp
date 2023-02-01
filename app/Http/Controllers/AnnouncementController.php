@@ -9,29 +9,19 @@ use Illuminate\Support\Facades\DB;
 
 class AnnouncementController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function acreate()
-    {
-        return view('announcement.acreate');
-    }
     
-    public function alist()
+    public function index()
     {
+        
         $data = Announcement::all();
-        return view('alist', compact('data'));
+        return view('announcement.index', compact('data'));
     }
 
+    public function create()
+    {
+        return view('announcement.create');
+    }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(AnnouncementRequest $request){
 
         $request->validated([
@@ -41,20 +31,6 @@ class AnnouncementController extends Controller
             'photo'=>'required',
             'user_id'=>'required',
         ]);
-        // $fileName = time().$request->file('photo');
-        //$path = $request->file('photo')->storeAs('images', $fileName, 'public');
-        //$request["photo"] = '/storage/'.$path;
-        //Announcement::create([
-        //    'header'=>$request->header,
-        //    'sub_header'=>$request->sub_header,
-          //  'description'=>$request->description,
-          //  'photo'=>$request->photo,
-          //  'user_id'=>$request->user_id,
-
-        //]);
-      
-
-     
 
 
         $announcement = new Announcement;
@@ -64,17 +40,10 @@ class AnnouncementController extends Controller
         $announcement->photo = $request->photo;
         $announcement->user_id = $request->user_id;
         $announcement->save();
-
         return redirect('/create-announcement')->with('message', 'Announcement Added Successfully');
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
     
