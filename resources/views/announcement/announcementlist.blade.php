@@ -4,7 +4,7 @@
             {{ __('List of Announcement') }}
         </h2>
         <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">
-            <a href = "{{url('/create-announcement')}}"class="btn btn-primary">Add</a>
+            <a href = "{{url('/add-announcement')}}"class="btn btn-primary">Add</a>
         </td>
     </x-slot>
 
@@ -36,6 +36,23 @@
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$data->description}}</td>
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$data->photo}}</td>
                             <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">{{$data->user_id}}</td>
+                            
+                            <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                <a href = "{{url('edit-announcement/'.$data->id)}}"class="btn btn-primary">update</a>
+                                
+                            </td>
+                            <td scope="row" class = "text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                <form action="{{url('delete-announcement/'.$data->id)}}" method="POST">
+                                    @csrf
+
+                                    @method('DELETE')
+                                    <x-primary-button class="btn btn-danger">Delete</x-primary-button>
+                                </form>
+
+                                
+                            </td>
+                            
+                            
                             {{-- <th scope = "col"> <a href="{{ route('dashboard.announcementupdate', ['id' => $data->id]) }} "
                               type="button" class="btn btn-success">Update</a></th>
                             <th scope = "col"> <a href="{{ route('dashboard.delete', ['id' => $data->id]) }} "

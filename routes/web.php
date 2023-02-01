@@ -27,12 +27,12 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::controller(AnnouncementController::class)->group(function () {
-    
-        Route::get('/list-announcement', 'index');
-        Route::get('/create-announcement', 'create');
-        Route::post('/create-announcement', 'store');
-        //Route::resource('/list-announcement', 'list');
-
+    Route::get('/list-announcement', 'announcementlist');
+    Route::get('/add-announcement', 'create');
+    Route::post('/add-announcement', 'store');
+    Route::get('/edit-announcement/{id}', 'edit');
+    Route::post('/edit-announcement/{id}', 'update');
+    Route::delete('/delete-announcement/{id}', 'destroy');
 });
 
 Route::middleware('auth')->group(function () {
