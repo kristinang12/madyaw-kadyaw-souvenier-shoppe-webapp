@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Butuan Souvenir Shop</title>
+  <title>Madyaw Kadyaw Souvenir Shoppe</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -25,16 +25,13 @@
   <link href="{{asset('assets-homepage/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
   <link href="{{asset('assets-homepage/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
-
-  
-
   <!-- Template Main CSS File -->
   <link href="{{asset('assets-homepage/assets/css/style.css')}}" rel="stylesheet">
 
 </head>
 
 <body>
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
     
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -50,38 +47,57 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto " href="#product">Products</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="nav-link scrollto" href="/announcement">Announcement</a></li>
-          <div class="d-flex flex-row bg-secondary">
-            
+          
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
       
-      <a href="/login" class="button btn btn-info">Log In </a>
+      <a href="/login" class="button btn btn-info">Login </a>
 
     </div>
   </header><!-- End Header -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
               <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-up">
+      
+      <style>
+        .multicolortext {
+          background: linear-gradient(to right, rgb(255, 190, 69), rgba(253, 84, 16, 0.993));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background color: transparent;
+        }
+        
+        .text-color {
+          color: black;
+          background color: transparent;
+        }
+      </style>
 
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-6 col-lg-8">
           <h1>Madyaw Kadyaw Souvenir Shoppe</h1>
+          <h1>
+            <span class="multicolortext">MADYAW KADYAW SOUVENIR SHOPPE.</span>
+          </h1>
         </div>
       </div>
       <div class="d-flex flex-row bg-secondary">
-        <div class="p-2 bg-info">
-            
-            <a href="/announcement" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Announcement</a>
-        </div>
+
     </div>
 
 
 
       <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        
+        
+        <div class="d-flex flex-row bg-secondary">
+            <div class="p-2 bg-info">
+                
+                <a href="/announcement" class="text-color" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Announcement</a>
+            </div>
+        </div>
         
         
         
@@ -91,8 +107,28 @@
   </section><!-- End Hero -->
 
   <main id="main">
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials">
+          <div class="container" data-aos="zoom-in">
+
+              <div class="swiper-wrapper">
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+    
+          </div>
+        </section><!-- End Testimonials Section -->
 
     <!-- ======= About Section ======= -->
+    <style>
+      section#about.about {
+        background-color: rgb(240, 141, 28);
+      }
+      section#about.about p{
+        color: black; 
+      }
+      </style>
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -117,30 +153,20 @@
         </div>
 
       </div>
-      <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets-homepage/assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
 
     <br>
 
     <!-- ======= Features Section ======= -->
+    <style>
+      section#features.features {
+        background-color: orange;
+      }
+      
+      h4{
+        color: black;
+      }
+     
+      </style>
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
@@ -150,7 +176,7 @@
             <div class="icon-box mt-5 mt-lg-0 " data-aos="zoom-in" data-aos-delay="150">
               <i class="bx bx-receipt"></i>
               <h4>Madyaw Kadyaw Cafe</h4>
-              <p>We would like to thank Madyaw Kadyaw Souvenir Shoppe and Madyaw Kadyaw Café as two of our official sponsors in realizing the Magmugna Ta project.
+              <p class='custom-text-class'>We would like to thank Madyaw Kadyaw Souvenir Shoppe and Madyaw Kadyaw Café as two of our official sponsors in realizing the Magmugna Ta project.
                  If you are looking for local products, souvenirs, delicacies and pasalubong, manobo costume and accessories, tokens and leis, you can visit Madyaw Kadyaw at Ochoa, T. Calo, P-3 Brgy. Limaja, Butuan City, Caraga, Philippines. You can check our Facebook page for their sample products.
               And if you are looking for a place where you can relax with your friends, have some coffee, and just enjoy the good food, Madyaw Kadyaw Cafe is a must try space! They are also open for bookings and orders. You can find their area inside the Madyaw Kadyaw Souvenir Shoppe. Don't miss their opening on November 8, 2022!
               From the Ka Bandera and the National Commission for Culture and the Arts (NCCA), daghang salamat sa inyong tanan!
@@ -166,6 +192,14 @@
     </section><!-- End About Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <style>
+      section#product.portfolio {
+        background-color: rgb(189, 80, 8);
+      }
+      section#about.about p{
+        color: #ffffff; 
+      }
+      </style>
     <section id="product" class="portfolio">
       <div class="container" data-aos="fade-up">
 
@@ -179,9 +213,9 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Manobo Necklace</li>
-              <li data-filter=".filter-card">Lies</li>
+              <li data-filter=".filter-card">Leis</li>
               <li data-filter=".filter-web">Bags</li>
-              <li data-filter=".filter-web">Clothing</li>
+              <li data-filter=".filter-art">Clothing</li>
             </ul>
           </div>
         </div>
@@ -206,20 +240,6 @@
             <div class="portfolio-wrap">
               <img src="assets-homepage/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets-homepage/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets-homepage/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
                 <h4>App 2</h4>
                 <p>App</p>
                 <div class="portfolio-links">
@@ -233,6 +253,34 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets-homepage/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets-homepage/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets-homepage/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets-homepage/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets-homepage/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 2</h4>
                 <p>Card</p>
@@ -248,6 +296,7 @@
             <div class="portfolio-wrap">
               <img src="assets-homepage/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
+          
                 <h4>Web 2</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
@@ -261,20 +310,6 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets-homepage/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets-homepage/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets-homepage/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Card 1</h4>
                 <p>Card</p>
@@ -314,6 +349,39 @@
             </div>
           </div>
 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-art">
+            <div class="portfolio-wrap">
+              <img src="assets-homepage/assets/img/portfolio/portfolio-10.jpg" class="img-fluid" alt="">
+               <div class="portfolio-info">
+                <h4>Art 1</h4>
+                <p>Art</p>
+                <div class="portfolio-links">
+                  <a href="assets-homepage/assets/img/portfolio/portfolio-10.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Art 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-art">
+            <div class="portfolio-wrap">
+              <img src="assets-homepage/assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
+               <div class="portfolio-info">
+                <h4>Art 2</h4>
+                <p>Art</p>
+                <div class="portfolio-links">
+                  <a href="assets-homepage/assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Art 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-art">
+            <div class="portfolio-wrap">
+              <img src="assets-homepage/assets/img/portfolio/portfolio-12.jpg" class="img-fluid" alt="">
+               <div class="portfolio-info">
+         
+
         </div>
 
       </div>
@@ -321,86 +389,14 @@
 
 
     <!-- ======= Announcement Section ======= -->
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Department of Tourism</h3>
-                <h4>Region &amp; Caraga 13</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Our DOT CARAGA Regional Director Marienela RA promoting the event of PHILIPPINES TRIBAL WEARS AND TAPESTRIES Habi at Burdang Katutubo on Oct. 22-23, 2021 to be held in Baguio City
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Art Jey Janaral Aquino</h3>
-                <h4>Philippine Army</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Have quality products for soveniers
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Louie Jay De la Cerna Losaria</h3>
-                <h4>Buyer of Manobo Clothing</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  He makes all things beautiful in His time. -Ecc 3:11
-                  Glory to God! Thank you Madyaw Kadyaw Souvenir Shoppe for my Manobo clothing.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Lorijane Decamotan Sacote</h3>
-                <h4>PD, DTI Agusan Del Norte</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  What a mouthful! But, this intricately designed accessory will surely remind you of the warm sunsets in Agusan del Norte with its dangling seashells and cozy fabric.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets-homepage/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Delven Ganas Oraiz</h3>
-                <h4>Visitor</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  "The joy of the Lord is my strength. May the Lord  continue to bless u in all aspect of your life. #DoneVisitation @Madyaw Kadyaw Souvenir Shoppe
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
+    <style>
+      section#contact.contact {
+        background-color: rgb(240, 122, 25);
+      }
+      </style>
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -502,23 +498,12 @@
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://web.facebook.com/ButuanPasalubong" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.facebook.com/ButuanPasalubong" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="shoppe"><i class="bx bxl-shoppe"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
           </div>
 
 
@@ -542,21 +527,7 @@
   <script src="{{asset('assets-homepage/assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  
   <script src="{{asset('assets-homepage/assets/js/main.js')}}"></script>
-  <!-- Vendor JS Files -->
-  <script src="{{ asset('assetsp-homepage/assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/typed.js/typed.min.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
-  <script src="{{ asset('assetsp-homepage/assets/vendor/php-email-form/validate.js')}}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{{ asset('assetsp-homepage/assets/js/main.js')}}"></script>
 
 </body>
 

@@ -1,11 +1,12 @@
 <x-admin-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-green-800 leading-tight">
+        <h2 class="font-semibold text-xl text-orangered-800 leading-tight">
             {{ __('Add User') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
+        
         <x-success-status class="mb-4" :status="session('message')" />
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-blue overflow-hidden shadow-sm sm:rounded-lg">
